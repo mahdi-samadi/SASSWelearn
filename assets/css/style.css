@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+  font-family: Inria Sans;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  position: relative;
+  animation: animationCV 1s ease-in-out;
+}
+.main .content {
+  width: 500px;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px 0 rgba(30, 25, 30, 0.14);
+}
+.main .content .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .bio img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.main .content .bio .info {
+  padding: 20px;
+}
+.main .content .bio .info h1 {
+  margin: 0 0 5px;
+  font-size: 1.85rem;
+  text-transform: capitalize;
+}
+.main .content .bio .info h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: red;
+  text-transform: capitalize;
+}
+.main .icon {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  animation: animationIcons 0.5s ease-in-out 0.75s forwards;
+  background: red;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px 0 rgba(30, 25, 30, 0.14);
+  z-index: -1;
+}
+
+@keyframes animationCV {
+  0% {
+    opacity: 0;
+    bottom: -500px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes animationIcons {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
